@@ -1,0 +1,49 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    open-pull-requests-limit: 5
+  - package-ecosystem: "npm"
+    directory: "/packages/server"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    open-pull-requests-limit: 5
+  - package-ecosystem: "npm"
+    directory: "/packages/ui"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    open-pull-requests-limit: 5
+  - package-ecosystem: "npm"
+    directory: "/packages/components"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    open-pull-requests-limit: 5
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    open-pull-requests-limit: 5
+  - package-ecosystem: "docker"
+    directory: "/docker"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    open-pull-requests-limit: 5
+  - package-ecosystem: "docker-compose"
+    directory: "/docker"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    open-pull-requests-limit: 5
